@@ -1,3 +1,7 @@
 name = input('Please enter your name:')
-
 print('Hello,', name)
+file = open('name.md', mode='w')
+file.write(name)
+file.close()
+file = open('name.md', mode='r')
+file.read()
