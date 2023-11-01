@@ -26,3 +26,10 @@ file.read()
 - Number: Can be an integer (whole number) or a float (decimal number)
 - String: Just text.
 - Boolean: Can be true or false
+
+
+**We also have complex data types like dictonaries and objects (which we will go into detail on later)**
+
+### Variables:
+- A variable is like an address for a value.
+> i.e. `name = 'Bryan'` is a variable that holds the value of 'Bryan'
