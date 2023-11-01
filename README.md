@@ -33,3 +33,28 @@ file.read()
 ### Variables:
 - A variable is like an address for a value.
 > i.e. `name = 'Bryan'` is a variable that holds the value of 'Bryan'
+
+```py
+name = 'bryan'
+print(name)
+
+name = 'john'
+print(name)
+
+age = 27
+print(age)
+
+isOld = True
+
+print(isOld)
+
+```
+
+
+#### Numbers
+> The following code will cause an error:
+
+```py
+age = '27'
+print(age + 1)
+```
