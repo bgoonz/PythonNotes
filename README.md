@@ -52,9 +52,34 @@ print(isOld)
 
 
 #### Numbers
-> The following code will cause an error:
+> The following code will cause an error (because age is a string and 1 is a number):
 
 ```py
 age = '27'
 print(age + 1)
 ```
+
+- The following code will concatinate the strings:
+
+```py
+age = '27'
+print(age + '1')
+```
+
+- The int function will turn any other type of data into a number:
+
+```py
+age = '27'
+print(int(age) + 1)
+# 28
+```
+
+- The int function will not work on something that cannot be converted to a number  like the word `'hello'`.
+
+
+**It is worth noting that in python you can add underscores to long numbers (where commas would normally go) to make them easier to read.
+
+>i.e.
+
+`1_000_000`
+
