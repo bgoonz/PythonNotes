@@ -146,4 +146,22 @@ print('after pop:',blockchain)
 
 **The blockchain we are building will be composed of blocks which will be lists that store the current value and all previous values**
 
+---
 
+
+## Functions:
+
+- In python the format is `def functionName():`
+- In python you don't use semicolones at the end of a line and you use indentation instead of curly braces.
+
+```py
+def add_numbers(a, b):
+    result = a + b
+    print(result)
+    return result
+
+# Now you can call this function
+result = add_numbers(3, 5)
+print(result)  # This will print 8
+
+```
