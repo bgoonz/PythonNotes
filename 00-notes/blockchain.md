@@ -8,3 +8,6 @@
 - Coins are transferred with Transactions, changing them into other currencies is not possible inside the Blockchain
   - The value of a coin is determied by the value the participants of the blockchain network assign to it.
 - Coains are created via Minining as a reward for the effort.
+
+
+![Our Blockchain](2023-11-02-11-58-37.png)
