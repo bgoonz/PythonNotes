@@ -1,6 +1,6 @@
 text = "I'm pretty cool"
 print(text)
-escapedText = 'I\'m an escaped single quote.'
+escapedText = "I'm an escaped single quote."
 print(escapedText)
 long_text = """
 Python is a high-level, interpreted programming language 
@@ -16,5 +16,3 @@ and dynamic memory allocation make it suitable for a variety of applications,
  from web development to scientific computing.
 """
 print(long_text)
-
-

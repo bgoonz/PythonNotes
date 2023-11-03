@@ -1,7 +1,7 @@
-name = 'bryan'
+name = "bryan"
 print(name)
 
-name = 'john'
+name = "john"
 print(name)
 
 age = 27
