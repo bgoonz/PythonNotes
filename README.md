@@ -163,13 +163,18 @@ print(result)  # This will print 8
 
 ```py
 blockchain = [[1]]
-def add_value():
-    blockchain.append([blockchain[-1],5.3])
+
+
+def add_value(transaction_amount):
+    blockchain.append([blockchain[-1], transaction_amount])
     print(blockchain)
-add_value()
-add_value()
-add_value()
-# [[1], [[1], 5.3]]
-# [[1], [[1], 5.3], [[[1], 5.3], 5.3]]
-# [[1], [[1], 5.3], [[[1], 5.3], 5.3], [[[[1], 5.3], 5.3], 5.3]]
+
+
+add_value(6.9)
+add_value(420)
+add_value(711)
+
+# [[1], [[1], 6.9]]
+# [[1], [[1], 6.9], [[[1], 6.9], 420]]
+# [[1], [[1], 6.9], [[[1], 6.9], 420], [[[[1], 6.9], 420], 711]]
 ```
