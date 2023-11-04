@@ -301,19 +301,19 @@ def get_user_input():
   - For Loop:
     - In Python, a for loop is used to iterate over a sequence (such as a list, tuple, dictionary, set, or string) or any other iterable object. Here's a simple example that iterates over a list of numbers and prints each number:
 
-```py
-numbers = [1, 2, 3, 4, 5]
-for number in numbers:
-    print(number)
-```
+        ```py
+        numbers = [1, 2, 3, 4, 5]
+        for number in numbers:
+            print(number)
+        ```
 
 
     - While Loop:
       - A `while` loop in Python repeatedly executes a block of code as long as a given condition is true. Here's a simple example that uses a `while` loop to count down from 5 to 1:
 
-```py
-count = 5
-while count > 0:
-    print(count)
-    count -= 1  
-```
+            ```py
+            count = 5
+            while count > 0:
+                print(count)
+                count -= 1  
+            ```
