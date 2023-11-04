@@ -1,6 +1,17 @@
 # Python
 
-- To enter python mode in the terminal (once python is installed) simply type `python` and you will be in python mode.
+### Useful Resources & Links
+
+- More on Python Basics: [https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator](https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator)
+- More on Python Functions: [https://docs.python.org/3/tutorial/controlflow.html#defining-functions](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+- Python Floating Point Precision: [https://docs.python.org/3/tutorial/floatingpoint.html](https://docs.python.org/3/tutorial/floatingpoint.html)
+- PEBs: [https://www.python.org/dev/peps/](https://www.python.org/dev/peps/)
+- PEB 8 - Style Guide: [https://www.python.org/dev/peps/pep-0008/](https://www.python.org/dev/peps/pep-0008/)
+- String Escape Characters: [http://python-reference.readthedocs.io/en/latest/docs/str/escapes.html](http://python-reference.readthedocs.io/en/latest/docs/str/escapes.html)
+- Example Docstrings: [http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html](http://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
+- More on the Python Extension for Visual Studio Code: [https://code.visualstudio.com/docs/languages/python](https://code.visualstudio.com/docs/languages/python)
+
+* To enter python mode in the terminal (once python is installed) simply type `python` and you will be in python mode.
   - **To exit python mode type `exit()`**
     **Example of Basic Python Code**
 
@@ -201,7 +212,7 @@ def get_last_blockchain_value():
 
 def add_value(transaction_amount, last_transaction=[1]):
     blockchain.append([last_transaction, transaction_amount])
-    
+
 add_value(6.9)
 add_value(420,get_last_blockchain_value())
 add_value(711,get_last_blockchain_value())
@@ -209,13 +220,11 @@ add_value(711,get_last_blockchain_value())
 print(blockchain)
 ```
 
-
 #### Keyword Arguments
 
 in Python are a way to pass arguments to a function using the name of the parameter regardless of their order in the parameter list. This can make the code more readable and clear, especially when a function has a lot of parameters or when you are passing literals that might be unclear on their own.
 
 When defining a function, you simply give each parameter a name. When calling the function, you use the syntax `parameter_name=value` to indicate which argument goes with which parameter.
-
 
 ```py
 # Function definition with two parameters
@@ -252,7 +261,6 @@ describe_pet(animal_type='parrot', pet_name='Polly')
 # Output: I have a parrot named Polly.
 ```
 
-
 ---
 
 ### Variable Scope:
@@ -279,8 +287,5 @@ def get_user_input():
     return user_input
 ```
 
-* In the code above, blockchain is a global variable while user_input is a local variable
-* Furtherm as arguments to add_value... transaction_amount and last_transaction are variables that are local to the add_value function.
-
-
-
+- In the code above, blockchain is a global variable while user_input is a local variable
+- Furtherm as arguments to add_value... transaction_amount and last_transaction are variables that are local to the add_value function.
