@@ -311,9 +311,9 @@ def get_user_input():
     - While Loop:
       - A `while` loop in Python repeatedly executes a block of code as long as a given condition is true. Here's a simple example that uses a `while` loop to count down from 5 to 1:
 
-            ```py
-            count = 5
-            while count > 0:
-                print(count)
-                count -= 1  
-            ```
+        ```py
+        count = 5
+        while count > 0:
+            print(count)
+            count -= 1  
+        ```
