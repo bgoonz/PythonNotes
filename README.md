@@ -251,3 +251,34 @@ describe_pet(pet_name='Hamlet')
 describe_pet(animal_type='parrot', pet_name='Polly')
 # Output: I have a parrot named Polly.
 ```
+
+
+---
+
+### Variable Scope:
+
+- In python we have `global` and `local` scope.
+- Global variables are defined at the top level of a python file and can be used anywhere in the code within that file after the line where the varialbe is defined.
+- Local variables are only available inside of a function (function arguments or variables defined in the function)
+
+> Example:
+
+```py
+blockchain = []
+
+
+def get_last_blockchain_value():
+    return blockchain[-1]
+
+
+def add_value(transaction_amount, last_transaction=[1]):
+    blockchain.append([last_transaction, transaction_amount])
+
+def get_user_input():
+    user_input= float(input('Transaction amount?  '))
+    return user_input
+```
+
+* In the code above, blockchain is a global variable while user_input is a local variable
+
+
