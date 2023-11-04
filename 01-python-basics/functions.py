@@ -9,14 +9,15 @@ result = add_numbers(3, 5)
 print(result)  # This will print 8
 
 
-#----------Default Arguments:------------------
+# ----------Default Arguments:------------------
+
 
 def greet(name, greeting="Hello"):
     print(f"{greeting}, {name}!")
+
 
 # Calling the function with both arguments
 greet("Alice", "Hi")  # Output: Hi, Alice!
 
 # Calling the function with only one argument (uses the default greeting)
-greet("Bob")           # Output: Hello, Bob!
-
+greet("Bob")  # Output: Hello, Bob!

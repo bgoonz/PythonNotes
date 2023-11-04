@@ -280,5 +280,7 @@ def get_user_input():
 ```
 
 * In the code above, blockchain is a global variable while user_input is a local variable
+* Furtherm as arguments to add_value... transaction_amount and last_transaction are variables that are local to the add_value function.
+
 
 
