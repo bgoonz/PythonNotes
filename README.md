@@ -208,3 +208,46 @@ add_value(711,get_last_blockchain_value())
 
 print(blockchain)
 ```
+
+
+#### Keyword Arguments
+
+in Python are a way to pass arguments to a function using the name of the parameter regardless of their order in the parameter list. This can make the code more readable and clear, especially when a function has a lot of parameters or when you are passing literals that might be unclear on their own.
+
+When defining a function, you simply give each parameter a name. When calling the function, you use the syntax `parameter_name=value` to indicate which argument goes with which parameter.
+
+
+```py
+# Function definition with two parameters
+def greet(first_name, last_name):
+    print(f"Hello, {first_name} {last_name}!")
+
+# Calling function with keyword arguments
+greet(first_name="John", last_name="Doe")
+greet(last_name="Doe", first_name="John")  # The order of named arguments can be changed
+# Both calls to greet will output Hello, John Doe!, because we're specifying which argument goes with which parameter by name, so the order doesn't matter.
+```
+
+> Another example:
+
+```py
+# Function definition with default values for parameters
+def describe_pet(animal_type='dog', pet_name='Rex'):
+    print(f"I have a {animal_type} named {pet_name}.")
+
+# Calling function with no arguments uses the default values
+describe_pet()
+# Output: I have a dog named Rex.
+
+# Calling function with one positional argument overrides the first default value
+describe_pet('hamster')
+# Output: I have a hamster named Rex.
+
+# Calling function with one keyword argument only overrides the specified parameter
+describe_pet(pet_name='Hamlet')
+# Output: I have a dog named Hamlet.
+
+# Calling function with both keyword arguments
+describe_pet(animal_type='parrot', pet_name='Polly')
+# Output: I have a parrot named Polly.
+```
