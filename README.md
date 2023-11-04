@@ -148,16 +148,13 @@ print(result)  # This will print 8
 
 - Of course a "Blockchain" consists of multiple "Blocks" - and a single Block simply can be considered a **data storage/container.** You can store **ANY data** of your choice in a Block.
 
-
 - Cryptocurrencies like Bitcoin are the most prominent use-case of the Blockchain technology but you can also store simple text in Blocks if you want to. Of course using a Blockchain makes most sense for data that should be **secure and distributed** across a broad network though. Data transparencyand safety are key advantages of the Blockchain.
 
 - Even when considering Cryptocurrencies, **you don't actually store the coins** in a Block but rather the **transactions between users**. Atransaction then includes an amount of coins that should be transferred.
 
 - For the purposes of this project, the Blocks we start with only hold **a number**. So you can think of it as a transaction, though the sender and recipient is missing. But that's something which will be added once we had a look at more complex data structures than simple lists.
 
-
 - Multiple Blocks in a list of Blocks then formthe first simple Blockchain.
-
 
 **Most basic blockchain list representation**
 
@@ -177,4 +174,37 @@ add_value(711)
 # [[1], [[1], 6.9]]
 # [[1], [[1], 6.9], [[[1], 6.9], 420]]
 # [[1], [[1], 6.9], [[[1], 6.9], 420], [[[[1], 6.9], 420], 711]]
+```
+
+**Default Arguments**
+
+- default arguments allow you to specify default values for parameters in a function. When you call the function and don't provide a value for a parameter with a default argument, the default value is used instead. This can be helpful when you want to make a function more flexible by allowing some parameters to be optional.
+
+```py
+def greet(name, greeting="Hello"):
+    print(f"{greeting}, {name}!")
+
+# Calling the function with both arguments
+greet("Alice", "Hi")  # Output: Hi, Alice!
+
+# Calling the function with only one argument (uses the default greeting)
+greet("Bob")           # Output: Hello, Bob!
+
+```
+
+**Using Default Arguments in Blockchain Example**
+
+```py
+blockchain = []
+def get_last_blockchain_value():
+    return blockchain[-1]
+
+def add_value(transaction_amount, last_transaction=[1]):
+    blockchain.append([last_transaction, transaction_amount])
+    
+add_value(6.9)
+add_value(420,get_last_blockchain_value())
+add_value(711,get_last_blockchain_value())
+
+print(blockchain)
 ```
