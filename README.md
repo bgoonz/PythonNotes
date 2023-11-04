@@ -317,3 +317,13 @@ def get_user_input():
             print(count)
             count -= 1  
         ```
+
+**The difference**
+- A for loop allows you to iterate through the elements of an iterable (e.g a list).. A while loop allows you to repeat code as long as it's condition is True.
+
+    - In a For loop you should not modify the iterable in the loop block or you could either end up skipping elements or inserting them infinately.
+    - For While loops you should provide an exit condition (otherwise you will need to ctrl +Z out of the loop).
+
+
+
+
