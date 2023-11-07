@@ -397,3 +397,8 @@ while True:
     else:
         print('Input is invalid! please enter a number from the list of options')
 ```
+
+
+**Break and Continue**
+- use `break` to exit the loop before it is finished.
+
