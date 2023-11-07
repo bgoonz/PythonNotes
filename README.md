@@ -325,5 +325,55 @@ def get_user_input():
     - For While loops you should provide an exit condition (otherwise you will need to ctrl +Z out of the loop).
 
 
+**Using both in our blockchain example**
+
+```py
+blockchain = []
 
 
+def get_last_blockchain_value():
+    return blockchain[-1]
+
+
+def add_value(transaction_amount, last_transaction=[1]):
+    blockchain.append([last_transaction, transaction_amount])
+
+
+def get_user_input():
+    user_input = float(input("Transaction amount?  "))
+    return user_input
+
+
+tx_amount = get_user_input()
+add_value(tx_amount)
+
+
+while True:
+    tx_amount = get_user_input()
+    add_value(
+        last_transaction=get_last_blockchain_value(), transaction_amount=tx_amount
+    )
+    for block in blockchain:
+        print("Outputting block")
+        print(block)
+
+```
+
+---
+
+### Conditionals:
+
+```py
+while True:
+    print("Please choose")
+    print("1: Add a new transaction value")
+    print("2: Output the blockchain blocks")
+    user_choice = get_user_chocie()
+    if user_choice == "1":
+        tx_amount = get_transaction_value()
+        add_value(
+            last_transaction=get_last_blockchain_value(), transaction_amount=tx_amount
+        )
+    else:
+        print_blockchain_elements()
+```
