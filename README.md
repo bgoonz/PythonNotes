@@ -299,31 +299,32 @@ def get_user_input():
 - Python has two types of loops, `for loops`, and `while loops`.
 
   - For Loop:
+
     - In Python, a for loop is used to iterate over a sequence (such as a list, tuple, dictionary, set, or string) or any other iterable object. Here's a simple example that iterates over a list of numbers and prints each number:
 
-        ```py
-        numbers = [1, 2, 3, 4, 5]
-        for number in numbers:
-            print(number)
-        ```
-
+      ```py
+      numbers = [1, 2, 3, 4, 5]
+      for number in numbers:
+          print(number)
+      ```
 
     - While Loop:
+
       - A `while` loop in Python repeatedly executes a block of code as long as a given condition is true. Here's a simple example that uses a `while` loop to count down from 5 to 1:
 
         ```py
         count = 5
         while count > 0:
             print(count)
-            count -= 1  
+            count -= 1
         ```
 
 **The difference**
+
 - A for loop allows you to iterate through the elements of an iterable (e.g a list).. A while loop allows you to repeat code as long as it's condition is True.
 
-    - In a For loop you should not modify the iterable in the loop block or you could either end up skipping elements or inserting them infinately.
-    - For While loops you should provide an exit condition (otherwise you will need to ctrl +Z out of the loop).
-
+  - In a For loop you should not modify the iterable in the loop block or you could either end up skipping elements or inserting them infinately.
+  - For While loops you should provide an exit condition (otherwise you will need to ctrl +Z out of the loop).
 
 **Using both in our blockchain example**
 
@@ -376,4 +377,23 @@ while True:
         )
     else:
         print_blockchain_elements()
+```
+
+> Using `elif`:
+
+```py
+while True:
+    print("Please choose")
+    print("1: Add a new transaction value")
+    print("2: Output the blockchain blocks")
+    user_choice = get_user_chocie()
+    if user_choice == "1":
+        tx_amount = get_transaction_value()
+        add_value(
+            last_transaction=get_last_blockchain_value(), transaction_amount=tx_amount
+        )
+    elif user_choice == '2':
+        print_blockchain_elements()
+    else:
+        print('Input is invalid! please enter a number from the list of options')
 ```
